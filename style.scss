@@ -340,6 +340,7 @@ ul{
     .hero2{
         flex-direction: column;
         width: 380px;
+        justify-content: center;
     }
     .hero__content{
         width: 380px;
@@ -375,6 +376,10 @@ ul{
     justify-content: space-between;
     }
 
+    .hero__btn{
+    width: 380px;
+    }
+
     .navbarr{
         align-items: center;
         width: 380px;
@@ -386,11 +391,13 @@ ul{
     .main__title2{
         width: 380px;
         color: var(--grayishdark-color);
+        align-items: center;
     }
 
     .main__text2{
         width: 380px;
         color: var(--grayishdark-color);
+        align-items: center;
     }
 
     .hero__btn:hover{
@@ -408,6 +415,7 @@ ul{
     .section__title{
         width: 380px;
         color: var(--grayishdark-color);
+        align-items: center;
     }
 
     // .ul_navbar{
@@ -432,6 +440,21 @@ ul{
     nav button#close-btn{
         display: none;
     }
+    @keyframes navAnimatin {
+        0%{
+            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        }
+        100%{
+            transform: rotateZ(0) rotateX(0) scale(1); 
+        }
+    }
+    .nav__link li:nth-child(2){
+        animation-delay: 200ms;
+        }
+    
+        .nav__link li:nth-child(3){
+            animation-delay: 400ms;
+            }
 
 
 

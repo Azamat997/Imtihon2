@@ -11,5 +11,5 @@ navlink.style.display = 'flex'
 closeBtn.addEventListener('click',()=>{
     openBtn.style.display = 'inline-block'
     closeBtn.style.display = 'none'
-    navlist.style.display = 'none'
+    navlink.style.display = 'none'
     })
