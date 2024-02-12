@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    //
+    --primary-color:#5FB4A2;
+    --secondary-color:#FAFAFA;
+    --darkblue-color:#203A4C;
+    --grayishdark-color:#33323D;
+    --lightgrey-color:#EAEAEB;
+    --brightred-color:#F43030;
+    // 
+    --Ibarrarealnova-font:"Ibarrarealnova", bold;
+    --Ibarrarealnova-font:"Ibarrarealnova", regular;
+    --publicsans-font:"Public Sans", regular;
+    // 
+    --transition: all 0.7s ease-in-out;
+
+
+}
+
+nav{
+    margin: 40px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+}
+
+li{
+    color: #33323d;
+    font-family:var(--publicsans-font), sans-serif;
+}
+
+li:hover {
+    color: #5FB4A2;
+    transition: all 0.7s ease-in-out;
+}
+
+hr{
+    width: 1110px;
+    height: 2px;
+    border: none;
+    background: #EAEAEB;
+    margin: 30px auto;
+    margin-top: 80px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 40px;
+    font-family: var(--Ibarrarealnova-font), serif;
+}
+
+p{
+    width: 70%;
+    height: 210px;
+    font-size: 16px;
+    font-family: var(--publicsans-font), sans-serif;
+}
+
+.hd__wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .hd__left{
+
+} */
+
+.m__wrapper{
+width: 1200px;
+margin: 80px auto;
+display: flex;
+justify-content: space-between;
+}
+
+.hd__right{
+    width: 645px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+span{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h6{
+    font-size: 17px;
+    font-family: var(--publicsans-font), sans-serif;
+}
+
+input{
+    width: 100%;
+    height: 48px;
+    background: #EAEAEB;
+    padding: 20px;
+    border: 2px solid #EAEAEB;
+}
+
+input:hover{
+    border: 2px solid #5FB4A2;
+    transition: all 0.5s ease-in-out;
+}
+
+.img__b{
+width: 104px;
+height: 24px;
+}
+
+.rt{
+width: 635px;
+}
+
+.btn__b{
+    width: 210px;
+    height: 48px;
+    background: #203A4C;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.btn__b:hover{
+    background: #5FB4A2;
+    box-shadow: 0px 0px 30px 3px #5FB4A2;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn__b:active{
+    transition: var(--transition);
+    color:var(--lightgrey-color);
+    background-color: var(--primary-color);
+}
+
+.navbar{
+    margin-top: 100px;
+    background-color: #33323D;
+    align-items: center;
+    width: 1440px;
+    height:80px;
+    top: 64px;
+    left: 165px;
+    display: flex;
+    justify-content: start;
+    gap:50px;
+    margin-bottom: 25px;
+}
+.nav__link{
+    font-family: var(--publicsans-font);
+    color: #FAFAFA;
+}
+
+nav button{
+    display: none;
+}
+
+/* ====Media quary==== */
+@media only screen and (max-width:768px){
+    .container{
+        width: 90%;
+        padding: 10px;
+        overflow: hidden;
+    }
+    .nav__link{
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 13rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        display: none;
+    }
+
+    .nav__link li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    animation: navAnimatin 400ms linear forwards;
+    transform-origin: top right;
+    }
+
+    .nav{
+        width: 380px;
+        justify-content: center;
+    }
+
+    .hd__wrapper{
+        flex-direction: column;
+        width: 380px;
+    }
+    .hd__left{
+        flex-direction: column;
+        width: 380px;
+    }
+    h1{
+        width: 380px;
+        color: var(--grayishdark-color);
+    }
+    // .hd__right{
+    
+    // }
+
+    .m__wrapper{
+        flex-direction: column;
+        width: 380px;
+    }
+
+    .lt{
+        flex-direction: column;
+        width: 380px; 
+    }
+
+    form{
+        flex-direction: column;
+        width: 380px; 
+    }
+
+    .btn__b:hover{
+        background: #5FB4A2;
+        transition: var(--transition);
+    }
+
+    .navbarr{
+        align-items: center;
+        width: 380px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav button{
+        display: inline-block;
+        border: transparent;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--secondary-color);
+        cursor: pointer;
+    }
+
+    nav button#close-btn{
+        display: none;
+    }
+
+    span{
+        width: 380px;
+    }
+
+    input{
+        width: 380px;
+    }
+}
+
+
+
+
